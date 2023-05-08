@@ -17,8 +17,10 @@ const customTheme = extendTheme({
     hd: '1900px',
   },
   fonts: {
-    body: "system-ui, sans-serif",
-    heading: "Georgia, serif",
+    opensans: "Open Sans, system-ui, sans-serif",
+    body: "Open Sans, system-ui, sans-serif",
+    heading: "Montserrat, sans-serif",
+    montserrat: "Montserrat, sans-serif",
     mono: "Menlo, monospace",
   },
   colors: {
@@ -28,8 +30,8 @@ const customTheme = extendTheme({
   },
   space: {
     gutter: '20px',
-    gridcol: '108px',
-    gridmargin: '202px',
+    gridcol: '85px',
+    gridmargin: '340px',
     px: '1px',
     spacer: '40px',
     desktop: {
@@ -38,8 +40,8 @@ const customTheme = extendTheme({
   },
   sizes: {
     gutter: '20px',
-    gridcol: '108px',
-    gridmargin: '202px',
+    gridcol: '85px',
+    gridmargin: '340px',
     px: '1px',
     spacer: '40px',
     desktop: {
@@ -50,7 +52,7 @@ const customTheme = extendTheme({
     full: '100%',
     half: '50%',
     container: {
-      desktop: '1516px',
+      desktop: '1280px',
     },
   },
 
