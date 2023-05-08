@@ -25,7 +25,7 @@ const nextConfig = {
       siteName: 'The Sydney Morning Herald', // The Sydney Morning Herald, Good Food
       icon: 'smh', // smh, goodfood, nine, afr, traveller, brisbanetimes, honey
       themeColour: '#0a1633', // hex
-      ogImage: '#',
+      ogImage: 'https://live-native-paid-content.pantheonsite.io/wp-content/uploads/2023/05/11256_AusSuper-SuperTips_Social.png',
       date: '12-05-23', // e.g 03-12-23
       year: '2023' // e.g 2023
     },
