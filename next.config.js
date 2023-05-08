@@ -18,18 +18,18 @@ const nextConfig = {
   },
   env: {
     appMeta: {
-      canonical: 'canonical in next.config.js', // https://brandedcontent.[masthead].com.au/xxx/xxx"
-      brand: 'brand in next.config.js', // e.g Black Hawk
-      title: 'title in next.config.js', // e.g Being a good pet parent starts at mealtime
-      description: 'description in next.config.js',
-      siteName: 'siteName Title in next.config.js', // The Sydney Morning Herald, Good Food
+      canonical: 'https://brandedcontent.smh.com.au/australiansuper/prepare-future-today', // https://brandedcontent.[masthead].com.au/xxx/xxx"
+      brand: 'Australian Super', // e.g Black Hawk
+      title: 'Prepare for your future, today', // e.g Being a good pet parent starts at mealtime
+      description: 'Taking control of your super is the first step to financial freedom in retirement.',
+      siteName: 'The Sydney Morning Herald', // The Sydney Morning Herald, Good Food
       icon: 'smh', // smh, goodfood, nine, afr, traveller, brisbanetimes, honey
       themeColour: '#0a1633', // hex
-      ogImage: 'https://live-native-paid-content.pantheonsite.io/wp-content/uploads/2022/12/lecreuset-social-media-bg-1.jpg',
-      date: 'dd-mm-yy', // e.g 03-12-23
-      year: 'yyyy' // e.g 2023
+      ogImage: '#',
+      date: '12-05-23', // e.g 03-12-23
+      year: '2023' // e.g 2023
     },
-    jobCode: '11111-name', // used for nine ga scripts
+    jobCode: '11256-australiansuper', // used for nine ga scripts
     guidelines: true, // shows or hides layout guideline bars
     activateMasthead: false, // shows or hides masthead
     mastheadOverride: false, // overrides masthead that's pulling from hostname: e.g honey,style,travel,kitchen,you,parenting,coach,pets,celebrity
