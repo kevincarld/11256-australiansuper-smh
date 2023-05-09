@@ -7,22 +7,34 @@ import Container from 'components/util/Container'
 import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
+import FeatureHeader from './util/FeatureHeader'
 
 export default function Hero() {
 
   return (
     <Box pos='relative'>
-      <Img dimension='375x675' mock='hero-sm' w='full' fit='cover' />
+      <FeatureHeader href='https://www.australiansuper.com/smart'/>
+
+      <Img display={{base: 'block', lg: 'none'}} dimension='375x675' mock='hero-sm' src='./images/hero-sm.jpg' w='full' fit='cover' />
+      <Img display={{base: 'none', lg: 'block'}} dimension='375x675' mock='hero-sm' src='./images/hero.jpg' w='full' fit='cover' />
 
       <Box pos='absolute' inset={{base: '0 0 auto 0', }} textAlign='center'>
-        <Box p={{base: '32% 49px 0 44px'}}>
-          <PreLine {...texts.title}>
+        <Box p={{base: '25% 49px 0 44px', sm: '32% 0 0 0', lg: '80px 49px 0 44px', d: '90px 0 0', wide: '110px 0 0', hd: '160px 0 0'}}>
+          <PreLine display={{base: 'block', md: 'none'}} {...texts.title}>
             {`Prepare for
             your future,
             today`}
           </PreLine>
 
-          <Text {...texts.subtitle}>Taking control of your super is the first step to financial freedom in retirement</Text>
+          <PreLine display={{base: 'none', md: 'block'}} {...texts.title}>
+            {`Prepare for your
+            future, today`}
+          </PreLine>
+
+          <Text whiteSpace={{base: 'normal', sm: 'pre-line', md: 'normal'}} {...texts.subtitle}>
+            {`Taking control of your super is the first step
+            to financial freedom in retirement`}
+          </Text>
         </Box>
       </Box>
 
@@ -50,13 +62,13 @@ const texts = {
     color: 'purple',
     fontFamily: 'heading',
     fontWeight: 'medium',
-    fontSize: {base: '37px', sm: '45px'},
-    lineHeight: {base: '41px', sm: '47px'},
+    fontSize: {base: '37px', sm: '45px', md: '65px', d: '102px'},
+    lineHeight: {base: '41px', sm: '47px', md: '69px', d: '110px'},
   },
   subtitle: {
     fontFamily: 'body',
-    fontSize: {base: '13px', sm: '13px'},
-    lineHeight: {base: '19px', sm: '19px'},
+    fontSize: {base: '13px', sm: '13px', d: '23px'},
+    lineHeight: {base: '19px', sm: '19px', d: '33px'},
   }
 }
 

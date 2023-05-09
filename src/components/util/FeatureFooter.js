@@ -10,15 +10,15 @@ export default function FeatureFooter({svg, href, ...rest}) {
       {...rest}
     >
       <Text sx={{
-        fontSize: {base: '9px', d: '12px'},
+        fontSize: '9px',
         fontFamily: 'Arial',
-        mb: '15px',
-        color:'#867750',
+        mb: '5px!important',
+        color:'black',
       }}>
         ADVERTISING FEATURE
       </Text>
 
-      <Link href={href} target={'_blank'} rel="sponsored" aria-label={`link to ${process.env.brand}`} sx={{'svg': {w:'full'}}}>
+      <Link maxW={{base: '140px', lg: 'none' }} href={href} target={'_blank'} rel="sponsored" aria-label={`link to ${process.env.brand}`} sx={{'svg': {w:'full'}}}>
         {svg}
       </Link>
     </Box>
