@@ -11,8 +11,36 @@ import { motion } from 'framer-motion'
 export default function Intro() {
 
   return (
-    <Box>
-      <h1>I am Intro</h1>
+    <Box pb={{base: '60px'}}>
+      <Box bg='white' borderTopLeftRadius='15px' borderTopRightRadius='15px' p={{base: '52px 30px 33px'}}>
+        <PreLine textStyle='body' textAlign='center'>
+          {`The pace of modern living can make even thinking about the future feel overwhelming, let alone doing something constructive and tangible about it. But just a few tweaks now can make a huge difference to your financial wellbeing in the years to come.
+
+          With the super guarantee soon increasing to 11 per cent, now’s a good opportunity to reassess exactly where that money is going to help your hard-earned savings achieve their full potential.
+
+          With the support of AustralianSuper, there are ways to improve financial awareness and confidence, simplify what can be a stressful subject and get on with looking forward to what life’s next chapter brings.
+
+          Here’s how…`}
+        </PreLine>
+      </Box>
+
+      <Img dimension='375x562' mock='intro-1' />
+
+      <Box bg='white' borderBottomLeftRadius='15px' borderBottomRightRadius='15px' p={{base: '34px 30px 68px'}}>
+        <Text textStyle='heading' color='purple'>Where to start</Text>
+
+        <PreLine textStyle='body' textAlign='center'>
+          {`AustralianSuper’s Lauren Davis suggests taking a simple step first, then building on that.
+
+          “This could be nominating a beneficiary if you haven’t done this yet,” she explains. “It could be logging into your account and seeing what insurances you have, or what you are invested in. It could be attending an education session to better understand how super works and how you can make the most of it.”
+
+          No matter what life stage you’re at, there’s no better time to start thinking about retirement planning than right now. “Engagement and education are the key to feeling empowered to making the most of your super,”Davis adds.
+
+          For easy-to-understand help and advice1, it’s worth checking out the tools and resources available on the AustralianSuper website, with plenty of articles, videos and webinars.
+
+          More of a podcast person? Make the most of your commute or daily walk by listening to AustralianSuper’s podcast, The Moments That Count. With a mix of both educational and anecdotal content, where you can hear from members about how they prepared for retirement, you’ll get plenty of valuable advice.`}
+        </PreLine>
+      </Box>
     </Box>
   )
 }

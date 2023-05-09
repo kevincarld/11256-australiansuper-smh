@@ -1,7 +1,7 @@
 
 import Layout from "components/util/Layout"
 // chakra
-import { Heading, Button } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
 //
 import Container from "components/util/Container"
 import Hero from "components/Hero"
@@ -15,8 +15,11 @@ import Footer from "components/Footer"
 export default function Home() {
   return (
     <Layout>
-      <Hero />
-      <Intro />
+      <Box bg='orange'>
+        <Hero />
+        <Intro />
+      </Box>
+
       <SuperFit />
       <Banner />
       <WhatNext />
