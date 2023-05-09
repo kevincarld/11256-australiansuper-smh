@@ -21,6 +21,7 @@ export default function Home() {
       </Box>
 
       <SuperFit />
+
       <Banner />
 
       <Box bg='purple'>

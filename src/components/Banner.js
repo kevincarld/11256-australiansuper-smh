@@ -8,13 +8,24 @@ import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
 import { animation_zoom } from 'utils/motion'
+import Mover from './util/Mover'
+import { Parallax } from 'react-scroll-parallax'
 
-export default function Banner() {
+export default function Banner({alt}) {
 
   return (
-    <Figure  overflow='hidden'>
-      <Img display={{base: 'block', lg: 'none'}} dimension='375x655' w='full' mock='banner-1' />
-      <Img display={{base: 'none', lg: 'block'}} dimension='1920x915' w='full' mock='banner-1' />
-    </Figure>
+    <>
+      <Figure
+        overflow='hidden'
+        h={{ base: '650px'}}
+        bgImage={{base: './images/banner-sm.jpg'}}
+        bgSize='cover'
+        bgAttachment='fixed'
+      >
+      </Figure>
+
+      {/* <Img display={{base: 'block', lg: 'none'}} dimension='375x655' w='full' mock='banner-1' />
+      <Img display={{base: 'none', lg: 'block'}} dimension='1920x915' w='full' mock='banner-1' /> */}
+    </>
   )
 }
