@@ -15,13 +15,13 @@ import Footer from "components/Footer"
 export default function Home() {
   return (
     <Layout>
-      <Box bg='orange'>
+      {/* <Box bg='orange'>
         <Hero />
         <Intro />
       </Box>
 
       <SuperFit />
-      <Banner />
+      <Banner /> */}
       <WhatNext />
       <Video />
       <Footer />
