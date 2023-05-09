@@ -27,9 +27,9 @@ export default function Intro() {
       <Img dimension='375x562' mock='intro-1' />
 
       <Box bg='white' borderBottomLeftRadius='15px' borderBottomRightRadius='15px' p={{base: '34px 30px 68px'}}>
-        <Text textStyle='heading' color='purple'>Where to start</Text>
+        <Text as='h2' mb={{base: '20px'}} textStyle='heading' color='purple'>Where to start</Text>
 
-        <PreLine textStyle='body' textAlign='center'>
+        <PreLine textStyle='body' >
           {`AustralianSuper’s Lauren Davis suggests taking a simple step first, then building on that.
 
           “This could be nominating a beneficiary if you haven’t done this yet,” she explains. “It could be logging into your account and seeing what insurances you have, or what you are invested in. It could be attending an education session to better understand how super works and how you can make the most of it.”
