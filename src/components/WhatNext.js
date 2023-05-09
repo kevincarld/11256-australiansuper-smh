@@ -30,25 +30,25 @@ export default function WhatNext() {
           <ListItem>
             <Flex gap={{base: '15px'}}>
               <ListIcon as={Check} />
-              <span><strong>Conduct</strong> a review to ensure you have the best account for your situation</span>
+              <Text as='span' textStyle='body'><strong>Conduct</strong> a review to ensure you have the best account for your situation</Text>
             </Flex>
           </ListItem>
           <ListItem>
             <Flex gap={{base: '15px'}}>
               <ListIcon as={Check} />
-              <span><strong>Consider</strong> consolidating if you have more than one account</span>
+              <Text as='span' textStyle='body'><strong>Consider</strong> consolidating if you have more than one account</Text>
             </Flex>
           </ListItem>
           <ListItem>
             <Flex gap={{base: '15px'}}>
               <ListIcon as={Check} />
-              <span><strong>Contribute</strong> extra if you have the capacity</span>
+              <Text as='span' textStyle='body'><strong>Contribute</strong> extra if you have the capacity</Text>
             </Flex>
           </ListItem>
           <ListItem>
             <Flex gap={{base: '15px'}}>
               <ListIcon as={Check} />
-              <span><strong>Compare</strong> funds with a long-term mindset</span>
+              <Text as='span' textStyle='body'><strong>Compare</strong> funds with a long-term mindset</Text>
             </Flex>
           </ListItem>
         </List>

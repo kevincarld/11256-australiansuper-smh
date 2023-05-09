@@ -13,20 +13,21 @@ export const ButtonStyles = {
   // styles for different visual variants ("outline", "solid")
   variants: {
     round: {
-      bg: 'primary',
+      bg: 'purple',
       color: 'white',
-      fontSize: {base: '23px', desktop: '24px'},
-      lineHeight: {base: '33px', desktop:'44px'},
+      fontFamily: 'body',
+      fontWeight: 'regular',
+      fontSize: {base: '17px', desktop: '21px'},
+      lineHeight: {base: '25px', desktop:'31px'},
       height: 'auto',
       pt: '15px',
       pb: '15px',
-      pl: '30px',
-      pr: '30px',
+      pl: '50px',
+      pr: '50px',
       borderRadius: '9999px',
 
       _hover: {
-        bg: 'white',
-        color: 'primary',
+        bg: 'orange',
         textDecor: 'none',
       }
     },
@@ -49,6 +50,6 @@ export const ButtonStyles = {
 
   // default values for 'size', 'variant' and 'colorScheme'
   defaultProps: {
-    variant: 'square',
+    variant: 'round',
   },
 }
