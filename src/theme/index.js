@@ -6,7 +6,17 @@ const customTheme = extendTheme({
     Button
   },
   textStyles: {
-
+    body: {
+      fontFamily: "body",
+      fontSize: {base: '16px', d:'18px'},
+      lineHeight: {base: '24px', d:'26px'},
+    },
+    heading: {
+      fontFamily: "heading",
+      fontWeight: 'medium',
+      fontSize: {base: '39px', d: '58px'},
+      lineHeight: {base: '41px', d: '61px'},
+    },
   },
   breakpoints : {
     sm: '360px',
@@ -17,9 +27,9 @@ const customTheme = extendTheme({
     hd: '1900px',
   },
   fonts: {
-    opensans: "Open Sans, system-ui, sans-serif",
-    body: "Open Sans, system-ui, sans-serif",
     heading: "Montserrat, sans-serif",
+    body: "Open Sans, system-ui, sans-serif",
+    opensans: "Open Sans, system-ui, sans-serif",
     montserrat: "Montserrat, sans-serif",
     mono: "Menlo, monospace",
   },
