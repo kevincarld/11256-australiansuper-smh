@@ -23,6 +23,7 @@ const customTheme = extendTheme({
     md: '768px',
     lg: '1024px',
     d: '1280px',
+    nopx: '1310px',
     wide: '1600px',
     hd: '1900px',
   },

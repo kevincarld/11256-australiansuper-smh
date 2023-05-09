@@ -22,7 +22,7 @@ export default function WhatNext() {
 
   return (
     <Box>
-      <Box bg='white' borderBottomLeftRadius='15px' borderBottomRightRadius='15px' p={{base: '23px 30px 26px'}}>
+      <Box bg='white' borderTopLeftRadius='15px' borderTopRightRadius='15px' p={{base: '23px 30px 26px'}}>
         <Text as='h2' textStyle='heading' mb={{base: '20px'}}>What next?</Text>
         <Text textStyle={'body'} fontWeight='bold' mr='-15px'>Feeling financially fired up? Think about the 4Cs when deciding next steps: </Text>
 

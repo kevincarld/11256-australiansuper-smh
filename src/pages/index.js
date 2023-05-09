@@ -15,16 +15,19 @@ import Footer from "components/Footer"
 export default function Home() {
   return (
     <Layout>
-      {/* <Box bg='orange'>
+      <Box bg='orange'>
         <Hero />
         <Intro />
       </Box>
 
       <SuperFit />
-      <Banner /> */}
-      <WhatNext />
-      <Video />
-      <Footer />
+      <Banner />
+
+      <Box bg='purple'>
+        <WhatNext />
+        <Video />
+        <Footer />
+      </Box>
     </Layout>
   )
 }

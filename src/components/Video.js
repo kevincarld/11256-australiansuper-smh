@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 export default function Video() {
 
   return (
-    <Box>
+    <Box  mb={{base: '56px', d:'127px'}}>
       <Img dimension='1280x720' mock='video here' />
 
       <Box bg='white' borderBottomLeftRadius='15px' borderBottomRightRadius='15px' p={{base: '27px 25px 49px 16px'}} textAlign='center'>
@@ -27,11 +27,3 @@ export default function Video() {
     </Box>
   )
 }
-
-// font styles
-const texts = {
-  xx: {
-
-  }
-}
-
