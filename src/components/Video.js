@@ -7,12 +7,14 @@ import Container from 'components/util/Container'
 import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
-
+import BrightCoveVideo from './util/BrightCoveVideo'
 export default function Video() {
 
   return (
     <Box  mb={{base: '56px', d:'127px'}}>
-      <Img dimension='1280x720' mock='video here' />
+      <Container>
+        <BrightCoveVideo dataPlayer={'WkAEp4m5G'} dataVideoId={'6327180810112'} script={'https://players.brightcove.net/6165065566001/WkAEp4m5G_default/index.min.js'} />
+      </Container>
 
       <Box bg='white' borderBottomLeftRadius='15px' borderBottomRightRadius='15px' p={{base: '27px 25px 49px 16px'}} textAlign='center'>
         <PreLine textStyle='body'>

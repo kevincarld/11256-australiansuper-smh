@@ -71,7 +71,7 @@ export default function BrightCoveVideo({script, dataPlayer, dataVideoId, ...res
         data-application-id=""
         class="vjs-fluid"
         loop
-        muted
+        controls
       />
     </Box>
   )
