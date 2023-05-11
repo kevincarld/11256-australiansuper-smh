@@ -13,7 +13,7 @@ export default function Hero() {
 
   return (
     <Box pos='relative'>
-      <FeatureHeader href='https://www.australiansuper.com/smart'/>
+      <FeatureHeader href='https://www.australiansuper.com/smart?utm_medium=web&utm_source=article&utm_campaign=super%20tips%7Cjoin%7Cfy23%7Cq4%7Cmay'/>
 
       <Img display={{base: 'block', lg: 'none'}} dimension='375x675' mock='hero-sm' src='./images/hero-sm.jpg' w='full' fit='cover' />
       <Img display={{base: 'none', lg: 'block'}} dimension='375x675' mock='hero-sm' src='./images/hero.jpg' w='full' fit='cover' />

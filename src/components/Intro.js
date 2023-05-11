@@ -44,7 +44,7 @@ export default function Intro() {
           </PreLine>
 
           <PreLine textStyle='body' >
-            {`More of a podcast person? Make the most of your commute or daily walk by listening to AustralianSuper’s podcast, The Moments That Count. With a mix of both educational and anecdotal content, where you can hear from members about how they prepared for retirement, you’ll get plenty of valuable advice.`}
+            {`More of a podcast person? Make the most of your commute or daily walk by listening to AustralianSuper’s podcast, `}<NineLink href='https://www.australiansuper.com/campaigns/podcast?utm_medium=web&utm_source=article&utm_campaign=super%20tips%7Cjoin%7Cfy23%7Cq4%7Cmay'>The Moments That Count</NineLink>{`. With a mix of both educational and anecdotal content, where you can hear from members about how they prepared for retirement, you’ll get plenty of valuable advice.`}
           </PreLine>
         </Grid>
       </Box>

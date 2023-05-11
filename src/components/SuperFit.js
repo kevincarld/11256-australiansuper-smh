@@ -30,7 +30,7 @@ export default function SuperFit() {
 
             “It could also mean when you have the capacity to, you could start making additional contributions to super, which could have a significant impact on your retirement outcome2,” Davis points out.
 
-            Meanwhile, downloading the AustralianSuper app will give you visibility over your account balance, investment options and insurance.
+            Meanwhile, downloading the `}<NineLink href='https://www.australiansuper.com/campaigns/mobile?utm_medium=web&utm_source=article&utm_campaign=super%20tips%7Cjoin%7Cfy23%7Cq4%7Cmay'>AustralianSuper app</NineLink> {`will give you visibility over your account balance, investment options and insurance.
 
             “You can also use the app to switch investments, if appropriate, add additional funds through contributions2, or adjust your insurances. This can be done anytime, anywhere, so this really stops the excuse of not having time to take control of your super,” says Davis. `}
           </PreLine>

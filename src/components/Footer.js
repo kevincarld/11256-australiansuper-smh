@@ -100,7 +100,7 @@ export default function Footer() {
 
       {/* Logo */}
       <Box pos='relative' pb={{base: '103px'}} bg='white'>
-        <FeatureFooter href='https://www.australiansuper.com/smart' />
+        <FeatureFooter href='https://www.australiansuper.com/smart?utm_medium=web&utm_source=article&utm_campaign=super%20tips%7Cjoin%7Cfy23%7Cq4%7Cmay' />
       </Box>
     </Box>
   )
