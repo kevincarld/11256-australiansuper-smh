@@ -27,20 +27,26 @@ export default function Intro() {
       <Img display={{base: "block", md: 'none'}} dimension='375x562' w='full' mock='intro-1' src='./images/intro-1-sm.jpg' />
       <Img display={{base: "none", md: 'block'}} dimension='1505x879' w='full' maxW='1505px' mx='auto' mock='intro-1' src='./images/intro-1.png' />
 
-      <Box pos='relative' maxW='1280px' mx='auto' mt={{md: '-20px', d: '-144px'}} bg='white' borderTopLeftRadius={{md: '15px'}} borderTopRightRadius={{md:'15px'}} borderBottomLeftRadius='15px' borderBottomRightRadius='15px' p={{base: '34px 30px 68px'}}>
+      <Box pos='relative' p={{base: '34px 30px 68px', d: '40px 130px 67px 100px'}} maxW='1280px' mx='auto' mt={{md: '-20px', d: '-144px'}} bg='white' borderTopLeftRadius={{md: '15px'}} borderTopRightRadius={{md:'15px'}} borderBottomLeftRadius='15px' borderBottomRightRadius='15px' >
         <Text as='h2' mb={{base: '20px'}} textStyle='heading' color='purple'>Where to start</Text>
 
-        <PreLine textStyle='body' >
-          {`AustralianSuper’s Lauren Davis suggests taking a simple step first, then building on that.
+        <Grid templateColumns={{d: 'repeat(3, 1fr)'}} gap={{d: '40px'}}>
+          <PreLine textStyle='body' >
+            {`AustralianSuper’s Lauren Davis suggests taking a simple step first, then building on that.
 
-          “This could be nominating a beneficiary if you haven’t done this yet,” she explains. “It could be logging into your account and seeing what insurances you have, or what you are invested in. It could be attending an education session to better understand how super works and how you can make the most of it.”
+            “This could be nominating a beneficiary if you haven’t done this yet,” she explains. “It could be logging into your account and seeing what insurances you have, or what you are invested in. It could be attending an education session to better understand how super works and how you can make the most of it.”`}
+          </PreLine>
 
-          No matter what life stage you’re at, there’s no better time to start thinking about retirement planning than right now. “Engagement and education are the key to feeling empowered to making the most of your super,”Davis adds.
+          <PreLine textStyle='body' >
+            {`No matter what life stage you’re at, there’s no better time to start thinking about retirement planning than right now. “Engagement and education are the key to feeling empowered to making the most of your super,”Davis adds.
 
-          For easy-to-understand help and advice1, it’s worth checking out the tools and resources available on the AustralianSuper website, with plenty of articles, videos and webinars.
+            For easy-to-understand help and advice1, it’s worth checking out the tools and resources available on the AustralianSuper website, with plenty of articles, videos and webinars.`}
+          </PreLine>
 
-          More of a podcast person? Make the most of your commute or daily walk by listening to AustralianSuper’s podcast, The Moments That Count. With a mix of both educational and anecdotal content, where you can hear from members about how they prepared for retirement, you’ll get plenty of valuable advice.`}
-        </PreLine>
+          <PreLine textStyle='body' >
+            {`More of a podcast person? Make the most of your commute or daily walk by listening to AustralianSuper’s podcast, The Moments That Count. With a mix of both educational and anecdotal content, where you can hear from members about how they prepared for retirement, you’ll get plenty of valuable advice.`}
+          </PreLine>
+        </Grid>
       </Box>
     </Box>
   )
