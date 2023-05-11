@@ -38,7 +38,7 @@ export default function Hero() {
         </Box>
       </Box>
 
-      <Box pos='absolute' inset='auto 0 0 0' pb='100px'>
+      <Box pos='absolute' inset='auto 0 0 0' pb={{base: '100px', d:'250px', wide: '400px'}}>
         <Center>
           <IconButton bg={'transparent'} _hover={{ bg: 'transparent' }}>
             <Box as='svg' width={{base: "32px", d: '42px'}} height={{base: '32px', d: "42px"}} viewBox="0 0 42 42">

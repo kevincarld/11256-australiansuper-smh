@@ -11,8 +11,8 @@ import { motion } from 'framer-motion'
 export default function Intro() {
 
   return (
-    <Box pb={{base: '60px'}}>
-      <Box bg='white' borderTopLeftRadius='15px' borderTopRightRadius='15px' p={{base: '52px 30px 33px'}}>
+    <Box pos='relative' pb={{base: '60px', d:'100px'}} mt={{ d: '-150px', wide: '-265px'}}>
+      <Box maxW='782px' mx='auto' bg='white' borderTopLeftRadius='15px' borderTopRightRadius='15px' p={{base: '52px 30px 33px', d: '60px 85px 82px'}}>
         <PreLine textStyle='body' textAlign='center'>
           {`The pace of modern living can make even thinking about the future feel overwhelming, let alone doing something constructive and tangible about it. But just a few tweaks now can make a huge difference to your financial wellbeing in the years to come.
 
@@ -24,9 +24,10 @@ export default function Intro() {
         </PreLine>
       </Box>
 
-      <Img dimension='375x562' mock='intro-1' />
+      <Img display={{base: "block", md: 'none'}} dimension='375x562' w='full' mock='intro-1' src='./images/intro-1-sm.jpg' />
+      <Img display={{base: "none", md: 'block'}} dimension='1505x879' w='full' maxW='1505px' mx='auto' mock='intro-1' src='./images/intro-1.png' />
 
-      <Box bg='white' borderBottomLeftRadius='15px' borderBottomRightRadius='15px' p={{base: '34px 30px 68px'}}>
+      <Box pos='relative' maxW='1280px' mx='auto' mt={{md: '-20px', d: '-144px'}} bg='white' borderTopLeftRadius={{md: '15px'}} borderTopRightRadius={{md:'15px'}} borderBottomLeftRadius='15px' borderBottomRightRadius='15px' p={{base: '34px 30px 68px'}}>
         <Text as='h2' mb={{base: '20px'}} textStyle='heading' color='purple'>Where to start</Text>
 
         <PreLine textStyle='body' >
