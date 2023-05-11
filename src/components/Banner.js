@@ -17,8 +17,8 @@ export default function Banner({alt}) {
     <>
       <Figure
         overflow='hidden'
-        h={{ base: '650px'}}
-        bgImage={{base: './images/banner-sm.jpg'}}
+        h={{ base: '650px', lg: '600px', wide: '915px'}}
+        bgImage={{base: './images/banner-sm.jpg', lg: './images/banner.jpg'}}
         bgSize='cover'
         bgAttachment='fixed'
       >
