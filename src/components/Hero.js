@@ -10,7 +10,25 @@ import { motion } from 'framer-motion'
 import FeatureHeader from './util/FeatureHeader'
 
 export default function Hero() {
-
+  const handleClickScroll = (e) => {
+    e.preventDefault()
+    function findPosition(obj) {
+      var currenttop = 0;
+      if (obj.offsetParent) {
+        do {
+          currenttop += obj.offsetTop;
+        } while ((obj = obj.offsetParent));
+        return [currenttop];
+      }
+    }
+    const element = document.getElementById('intro');
+    if (element) {
+      window.scrollTo({
+        top: findPosition(document.getElementById("intro")),
+        behavior: 'smooth'
+      } )
+    }
+  };
   return (
     <Box pos='relative'>
       <FeatureHeader href='https://www.australiansuper.com/smart?utm_medium=web&utm_source=article&utm_campaign=super%20tips%7Cjoin%7Cfy23%7Cq4%7Cmay'/>
@@ -40,7 +58,7 @@ export default function Hero() {
 
       <Box pos='absolute' inset='auto 0 0 0' pb={{base: '100px', d:'250px', wide: '400px'}}>
         <Center>
-          <IconButton bg={'transparent'} _hover={{ bg: 'transparent' }}>
+          <IconButton bg={'transparent'} _hover={{ bg: 'transparent' }} onClick={handleClickScroll}>
             <Box as='svg' width={{base: "32px", d: '42px'}} height={{base: '32px', d: "42px"}} viewBox="0 0 42 42">
               <g id="Group_6305" data-name="Group 6305" transform="translate(-939 -784)">
                 <circle id="Ellipse_81" data-name="Ellipse 81" cx="21" cy="21" r="21" transform="translate(939 784)" fill="#fff"/>

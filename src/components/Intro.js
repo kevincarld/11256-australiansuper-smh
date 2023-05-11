@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 export default function Intro() {
 
   return (
-    <Box pos='relative' pb={{base: '60px', d:'100px'}} mt={{ d: '-150px', wide: '-265px'}}>
+    <Box id='intro' pos='relative' pb={{base: '60px', d:'100px'}} mt={{ d: '-150px', wide: '-265px'}}>
       <Box maxW='782px' mx='auto' bg='white' borderTopLeftRadius='15px' borderTopRightRadius='15px' p={{base: '52px 30px 33px', d: '60px 85px 82px'}}>
         <PreLine textStyle='body' textAlign='center'>
           {`The pace of modern living can make even thinking about the future feel overwhelming, let alone doing something constructive and tangible about it. But just a few tweaks now can make a huge difference to your financial wellbeing in the years to come.

@@ -15,7 +15,7 @@ import Footer from "components/Footer"
 export default function Home() {
   return (
     <Layout>
-      <Box bg='orange'>
+      <Box bg='orange' mt='54px'>
         <Hero />
         <Intro />
       </Box>
