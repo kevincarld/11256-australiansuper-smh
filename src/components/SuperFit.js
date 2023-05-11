@@ -14,7 +14,11 @@ export default function SuperFit() {
     <Box pos='relative' bg='white' mt={{base: '53px', d: '150px'}} mb={{base: '38px', d: '80px'}}>
       <Img pos='relative' zIndex='2' dimension='375x333' display={{base: 'block', d: 'none'}} mock='superfit-1' w='full' src='./images/superfit-1-sm.jpg' />
 
-      <Figure display={{base: 'none', d: 'block'}} pos='absolute' inset={{d: '158px auto 0 45%', d: '-70px auto 0 45%'}} zIndex='3'>
+      <Figure as={motion.figure} display={{base: 'none', d: 'block'}} pos='absolute' inset={{d: '158px auto 0 45%', d: '-70px auto 0 45%'}} zIndex='3'
+        initial={{ opacity: 0, x: -50 }}
+        whileInView= {{ opacity: 1, x: 0, transition: { duration: 1.3, type: 'tween' } }}
+        viewport={{ once: true, margin: '0px 0px -100px 0px' }}
+      >
         <Img dimension='1071x951' mock='superfit-1' src='./images/superfit-1.png' />
       </Figure>
 

@@ -8,6 +8,7 @@ import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
 import FeatureHeader from './util/FeatureHeader'
+import { animation_shaker } from 'utils/motion'
 
 export default function Hero() {
   const handleClickScroll = (e) => {
@@ -37,7 +38,7 @@ export default function Hero() {
       <Img display={{base: 'none', lg: 'block'}} dimension='375x675' mock='hero-sm' src='./images/hero.jpg' w='full' fit='cover' />
 
       <Box pos='absolute' inset={{base: '0 0 auto 0', }} textAlign='center'>
-        <Box p={{base: '25% 49px 0 44px', sm: '32% 0 0 0', lg: '80px 49px 0 44px', d: '90px 0 0', wide: '110px 0 0', hd: '160px 0 0'}}>
+        <Box as={motion.div} initial={{opacity: 0, y: 50}} animate={{ opacity:1, y:0, transition: {duration: 1.2, type: 'tween'} }} p={{base: '25% 49px 0 44px', sm: '32% 0 0 0', lg: '80px 49px 0 44px', d: '90px 0 0', wide: '110px 0 0', hd: '160px 0 0'}}>
           <PreLine display={{base: 'block', md: 'none'}} {...texts.title}>
             {`Prepare for
             your future,
@@ -58,7 +59,7 @@ export default function Hero() {
 
       <Box pos='absolute' inset='auto 0 0 0' pb={{base: '100px', d:'250px', wide: '400px'}}>
         <Center>
-          <IconButton bg={'transparent'} _hover={{ bg: 'transparent' }} onClick={handleClickScroll}>
+          <IconButton as={motion.button} bg={'transparent'} _hover={{ bg: 'transparent' }} onClick={handleClickScroll} variants={animation_shaker} whileInView='shake'>
             <Box as='svg' width={{base: "32px", d: '42px'}} height={{base: '32px', d: "42px"}} viewBox="0 0 42 42">
               <g id="Group_6305" data-name="Group 6305" transform="translate(-939 -784)">
                 <circle id="Ellipse_81" data-name="Ellipse 81" cx="21" cy="21" r="21" transform="translate(939 784)" fill="#fff"/>
