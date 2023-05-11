@@ -22,57 +22,59 @@ export default function WhatNext() {
 
   return (
     <Box pt={{base: '34px', lg: '66px'}}>
-      <Box bg='white' borderTopLeftRadius='15px' borderTopRightRadius='15px' p={{base: '23px 30px 26px'}}>
+      <Box maxW='1004px' mx='auto' bg='white' borderTopLeftRadius='15px' borderTopRightRadius='15px' p={{base: '23px 30px 26px', lg: '58px 129px 69px 113px'}}>
         <Text as='h2' textStyle='heading' mb={{base: '20px'}}>What next?</Text>
-        <Text textStyle={'body'} fontWeight='bold' mr='-15px'>Feeling financially fired up? Think about the 4Cs when deciding next steps: </Text>
 
-        <List spacing={4} mb={{base: '30px'}}>
-          <ListItem>
-            <Flex gap={{base: '15px'}}>
-              <ListIcon as={Check} />
-              <Text as='span' textStyle='body'><strong>Conduct</strong> a review to ensure you have the best account for your situation</Text>
-            </Flex>
-          </ListItem>
-          <ListItem>
-            <Flex gap={{base: '15px'}}>
-              <ListIcon as={Check} />
-              <Text as='span' textStyle='body'><strong>Consider</strong> consolidating if you have more than one account</Text>
-            </Flex>
-          </ListItem>
-          <ListItem>
-            <Flex gap={{base: '15px'}}>
-              <ListIcon as={Check} />
-              <Text as='span' textStyle='body'><strong>Contribute</strong> extra if you have the capacity</Text>
-            </Flex>
-          </ListItem>
-          <ListItem>
-            <Flex gap={{base: '15px'}}>
-              <ListIcon as={Check} />
-              <Text as='span' textStyle='body'><strong>Compare</strong> funds with a long-term mindset</Text>
-            </Flex>
-          </ListItem>
-        </List>
+        <Grid templateColumns={{lg: 'repeat(2, 1fr)'}} gap={{base: '24px', lg: '42px'}}>
+          <GridItem>
+            <Text textStyle={'body'} fontWeight='bold' mr='-15px'>Feeling financially fired up? Think about the 4Cs when deciding next steps: </Text>
 
-        <PreLine textStyle='body'>
-          {`Everyone has their own ideas about how they want their later years to play out. For some, travel is a priority, while others may be looking forward to spending more time on hobbies. Davis recommends compiling a budget to compare spending habits now and how that might look in retirement, then working backwards from there.
+            <List spacing={4} mb={{base: '30px'}}>
+              <ListItem>
+                <Flex gap={{base: '15px'}}>
+                  <ListIcon as={Check} />
+                  <Text as='span' textStyle='body'><strong>Conduct</strong> a review to ensure you have the best account for your situation</Text>
+                </Flex>
+              </ListItem>
+              <ListItem>
+                <Flex gap={{base: '15px'}}>
+                  <ListIcon as={Check} />
+                  <Text as='span' textStyle='body'><strong>Consider</strong> consolidating if you have more than one account</Text>
+                </Flex>
+              </ListItem>
+              <ListItem>
+                <Flex gap={{base: '15px'}}>
+                  <ListIcon as={Check} />
+                  <Text as='span' textStyle='body'><strong>Contribute</strong> extra if you have the capacity</Text>
+                </Flex>
+              </ListItem>
+              <ListItem>
+                <Flex gap={{base: '15px'}}>
+                  <ListIcon as={Check} />
+                  <Text as='span' textStyle='body'><strong>Compare</strong> funds with a long-term mindset</Text>
+                </Flex>
+              </ListItem>
+            </List>
 
-          Moneysmart’s budget planner is a good place to start.
+            <PreLine textStyle='body'>
+              {`Everyone has their own ideas about how they want their later years to play out. For some, travel is a priority, while others may be looking forward to spending more time on hobbies. Davis recommends compiling a budget to compare spending habits now and how that might look in retirement, then working backwards from there.`}
+            </PreLine>
+          </GridItem>
 
-          The long-term mindset is crucial, Davis emphasises, as super is a long-term asset. “Your super may need to last you 20-plus years in retirement. So, no matter what stage you are at… you need to make decisions accordingly.”
+          <GridItem>
+            <PreLine textStyle='body'>
+            {`Moneysmart’s budget planner is a good place to start.
 
-          When choosing the right fund, it’s important to look for competitive fees, strong long-term performance and factor in the right insurance for your individual needs. Useful comparison tools can be found on the ATO website, or at australiansuper.com/compare.
+              The long-term mindset is crucial, Davis emphasises, as super is a long-term asset. “Your super may need to last you 20-plus years in retirement. So, no matter what stage you are at… you need to make decisions accordingly.”
 
-          “There is an abundance of help and guidance available to you through your super fund/AustralianSuper,” adds Davis. “So, make the most of this to ensure what is important to you is factored into the decisions you make.”`}
-        </PreLine>
+              When choosing the right fund, it’s important to look for competitive fees, strong long-term performance and factor in the right insurance for your individual needs. Useful comparison tools can be found on the ATO website, or at australiansuper.com/compare.
+
+              “There is an abundance of help and guidance available to you through your super fund/AustralianSuper,” adds Davis. “So, make the most of this to ensure what is important to you is factored into the decisions you make.”`}
+            </PreLine>
+          </GridItem>
+        </Grid>
+
       </Box>
     </Box>
   )
 }
-
-// font styles
-const texts = {
-  xx: {
-
-  }
-}
-
