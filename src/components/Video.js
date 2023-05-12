@@ -24,7 +24,7 @@ export default function Video() {
           visit <NineLink href='https://www.australiansuper.com/smart?utm_medium=web&utm_source=article&utm_campaign=super%20tips%7Cjoin%7Cfy23%7Cq4%7Cmay'>australiansuper.com/smart</NineLink>
         </Text>
 
-        <Button as={NineLink} textDecor='none' _hover={{ color: 'white', bg: 'orange'}} href='https://www.australiansuper.com/smart?utm_medium=web&utm_source=article&utm_campaign=super%20tips%7Cjoin%7Cfy23%7Cq4%7Cmay'>LEARN MORE</Button>
+        <Button as={NineLink} textDecor='none' _hover={{ color: 'white', bg: 'orange'}} href='https://www.australiansuper.com/'>LEARN MORE</Button>
       </Box>
     </Box>
   )
