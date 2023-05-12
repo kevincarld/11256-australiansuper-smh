@@ -24,7 +24,7 @@ export default function WhatNext() {
 
   return (
     <Box pt={{base: '34px', lg: '66px'}}>
-      <Mover y={[15, 0]}>
+      <Mover y={[10, 0]}>
         <Box maxW='1004px' mx='auto' bg='white' borderTopLeftRadius='15px' borderTopRightRadius='15px' p={{base: '23px 30px 26px', lg: '58px 129px 69px 113px'}}>
           <Text as='h2' textStyle='heading' mb={{base: '20px'}}>What next?</Text>
 
