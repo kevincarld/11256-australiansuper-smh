@@ -3,6 +3,10 @@ import { Global } from '@emotion/react'
 const GlobalCss = () => (
   <Global
     styles={`
+      sup {
+        font-size: 56%;
+        top: -0.6em;
+      }
         @font-face {
           font-family: 'Montserrat';
           src: url('./fonts/Montserrat-Medium.woff2') format('woff2'),

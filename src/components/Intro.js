@@ -45,20 +45,20 @@ export default function Intro() {
         <Box pos='relative' p={{base: '34px 30px 68px', d: '40px 131.4px 67px 111px'}} maxW='1280px' mx='auto' mt={{md: '-20px', d: '-144px'}} bg='white' borderTopLeftRadius={{md: '15px'}} borderTopRightRadius={{md:'15px'}} borderBottomLeftRadius='15px' borderBottomRightRadius='15px' >
           <Text as='h2' mb={{base: '20px'}} textStyle='heading' color='purple'>Where to start</Text>
 
-          <Grid templateColumns={{d: 'minmax(auto, 319px) minmax(auto, 319px) minmax(auto, 310px)'}} gap={{d: '41.3px'}}>
-            <PreLine textStyle='body' maxW={{d: '319px'}}>
+          <Grid templateColumns={{d: 'minmax(auto, 319px) 335px minmax(auto, 310px)'}} gap={{d: '41.3px'}}>
+            <PreLine textStyle='body'>
               {`AustralianSuper’s Lauren Davis suggests taking a simple step first, then building on that.
 
               “This could be nominating a beneficiary if you haven’t done this yet,” she explains. “It could be logging into your account and seeing what insurances you have, or what you are invested in. It could be attending an education session to better understand how super works and how you can make the most of it.”`}
             </PreLine>
 
-            <PreLine textStyle='body' maxW={{d: '326px'}}>
+            <PreLine textStyle='body'>
               {`No matter what life stage you’re at, there’s no better time to start thinking about retirement planning than right now. “Engagement and education are the key to feeling empowered to making the most of your super,” Davis adds.
 
               For easy-to-understand help and`} advice<sup>1</sup>{`, it’s worth checking out the tools and resources available on the AustralianSuper website, with plenty of articles, videos and webinars.`}
             </PreLine>
 
-            <PreLine textStyle='body' maxW={{d: '310px'}}>
+            <PreLine textStyle='body'>
               {`More of a podcast person? Make the most of your commute or daily walk by listening to AustralianSuper’s podcast, `}<NineLink href='https://www.australiansuper.com/campaigns/podcast?utm_medium=web&utm_source=article&utm_campaign=super%20tips%7Cjoin%7Cfy23%7Cq4%7Cmay'>The Moments That Count</NineLink>{`. With a mix of both educational and anecdotal content, where you can hear from members about how they prepared for retirement, you’ll get plenty of valuable advice.`}
             </PreLine>
           </Grid>
