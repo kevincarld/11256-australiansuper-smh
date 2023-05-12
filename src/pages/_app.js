@@ -35,7 +35,6 @@ export default function App({ Component, pageProps }) {
         <meta name="twitter:image" content={process.env.appMeta?.ogImage} />
       </Head>
 
-       {/* // UNCOMMENT FOR: brandedcontent snow plow scripts
        {!isDev &&
           <>
             <Script id="titan">
@@ -144,7 +143,7 @@ export default function App({ Component, pageProps }) {
               `}
             </Script>
           </>
-        } */}
+        }
 
 
       {/* UNCOMMENT FOR: nine.com.au ga scripts
@@ -196,7 +195,6 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </MastheadProvider>
 
-      {/* UNCOMMENT FOR: GA4 scripts
       {!isDev &&
 
         <>
@@ -212,7 +210,7 @@ export default function App({ Component, pageProps }) {
           </Script>
         </>
       }
-      */}
+
     </React.Fragment>
   );
 }
