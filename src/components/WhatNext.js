@@ -42,13 +42,13 @@ export default function WhatNext() {
                 <ListItem>
                   <Flex gap={{base: '15px'}}>
                     <ListIcon as={Check} />
-                    <Text as='span' textStyle='body'><strong>Consider</strong> consolidating if you have more than one account</Text>
+                    <Text as='span' textStyle='body'><strong>Consider</strong> consolidating if you have more than one account<sup>3</sup></Text>
                   </Flex>
                 </ListItem>
                 <ListItem>
                   <Flex gap={{base: '15px'}}>
                     <ListIcon as={Check} />
-                    <Text as='span' textStyle='body'><strong>Contribute</strong> extra if you have the capacity</Text>
+                    <Text as='span' textStyle='body'><strong>Contribute</strong> extra if you have the capacity<sup>2</sup></Text>
                   </Flex>
                 </ListItem>
                 <ListItem>
@@ -70,7 +70,7 @@ export default function WhatNext() {
 
                 The long-term mindset is crucial, Davis emphasises, as super is a long-term asset. “Your super may need to last you 20-plus years in retirement. So, no matter what stage you are at… you need to make decisions accordingly.”
 
-                When choosing the right fund, it’s important to look for competitive fees, strong long-term performance and factor in the right insurance for your individual needs. Useful comparison tools can be found on the `}<NineLink href='https://www.ato.gov.au/'>ATO website</NineLink>{`, or at `}<NineLink href='https://www.australiansuper.com/compare-us?utm_medium=web&utm_source=article&utm_campaign=super%20tips%7Cjoin%7Cfy23%7Cq4%7Cmay'>australiansuper.com/compare</NineLink>{`.
+                When choosing the right fund, it’s important to look for competitive fees, strong long-term performance and factor in the right insurance for your individual needs. Useful comparison tools can be found on the `}<NineLink href='https://www.ato.gov.au/YourSuper-comparison-tool/'>ATO website</NineLink>{`, or at `}<NineLink href='https://www.australiansuper.com/compare-us?utm_medium=web&utm_source=article&utm_campaign=super%20tips%7Cjoin%7Cfy23%7Cq4%7Cmay'>australiansuper.com/compare</NineLink>{`.
 
                 “There is an abundance of help and guidance available to you through your super fund/AustralianSuper,” adds Davis. “So, make the most of this to ensure what is important to you is factored into the decisions you make.”`}
               </PreLine>

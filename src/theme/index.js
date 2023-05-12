@@ -29,7 +29,7 @@ const customTheme = extendTheme({
   },
   fonts: {
     heading: "Montserrat, sans-serif",
-    body: "Open Sans, system-ui, sans-serif",
+    body: "Montserrat, sans-serif",
     opensans: "Open Sans, system-ui, sans-serif",
     montserrat: "Montserrat, sans-serif",
     mono: "Menlo, monospace",
