@@ -18,31 +18,9 @@ export default function Footer() {
   return (
     <Box  >
       {/* accordion */}
-      <Box pos={'relative'}
-        sx={{
-          h: '570px',
-          '@media screen and (min-width: 375px)': {
-            h: '500px',
-          },
-          '@media screen and (min-width: 400px)': {
-            h: '420px',
-          },
-          '@media screen and (min-width: 520px)': {
-            h: '350px',
-          },
-          '@media screen and (min-width: 768px)': {
-            h: '300px',
-          },
-          '@media screen and (min-width: 1024px)': {
-            h: '250px',
-          },
-          '@media screen and (min-width: 1280px)': {
-            h: '200px',
-          },
-        }}
-      >
+      <Box pos={'relative'} >
 
-        <Box bg='white' pos='absolute' inset='auto 0 0 0'>
+        <Box bg='white' >
           <Container>
             <Accordion allowToggle>
               <AccordionItem borderTop='0' borderBottomColor={'#B8B8B8'} >
@@ -68,7 +46,7 @@ export default function Footer() {
                 </AccordionButton>
 
                 <AccordionPanel pb={4} px={{base: '30px', nopx:0}} {...texts.panelContent}>
-                  <OrderedList spacing={3}>
+                  <OrderedList spacing={{base: 2, d: 1}}>
                     <ListItem>Personal financial product advice is provided under the Australian Financial Services Licence held by a third party and not by AustralianSuper Pty Ltd. Fees may apply.</ListItem>
                     <ListItem>Before adding to your super, consider your financial circumstances, contribution caps that may apply and tax issues. We recommend you consider seeking financial advice.</ListItem>
                     <ListItem>Before deciding to combine your super, consider any fees or charges that may apply, and the effect a transfer may have on benefits in your other fund such as insurance cover. We recommend you consider seeking financial advice.</ListItem>
@@ -114,7 +92,7 @@ const texts = {
   },
   panelContent: {
     fontSize: {base: '11px'},
-    lineHeight: {base: '14px'},
+    lineHeight: {base: '14px', d:'20px'},
   }
 }
 
