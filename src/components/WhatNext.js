@@ -20,7 +20,7 @@ const Check = () => (
   </Box>
 
 )
-export default function WhatNext() {
+export default function WhatNext({scrollToDisc}) {
 
   return (
     <Box pt={{base: '34px', lg: '66px'}}>
@@ -42,13 +42,13 @@ export default function WhatNext() {
                 <ListItem>
                   <Flex gap={{base: '15px'}}>
                     <ListIcon as={Check} />
-                    <Text as='span' textStyle='body'><strong>Consider</strong> consolidating if you have more than one account<sup>3</sup></Text>
+                    <Text as='span' textStyle='body'><strong>Consider</strong> consolidating if you have more than one <Box as='span' onClick={scrollToDisc} _hover={{cursor: 'pointer'}}>account<sup>3</sup></Box></Text>
                   </Flex>
                 </ListItem>
                 <ListItem>
                   <Flex gap={{base: '15px'}}>
                     <ListIcon as={Check} />
-                    <Text as='span' textStyle='body'><strong>Contribute</strong> extra if you have the capacity<sup>2</sup></Text>
+                    <Text as='span' textStyle='body'><strong>Contribute</strong> extra if you have the <Box as='span' onClick={scrollToDisc} _hover={{cursor: 'pointer'}}>capacity<sup>2</sup></Box></Text>
                   </Flex>
                 </ListItem>
                 <ListItem>

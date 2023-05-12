@@ -12,8 +12,8 @@ import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
 import FeatureFooter from './util/FeatureFooter'
-export default function Footer() {
-  const { isOpen, onToggle } = useDisclosure();
+export default function Footer({disclosureState}) {
+  const { isOpen, onToggle } = disclosureState
 
   return (
     <Box  >
@@ -22,7 +22,7 @@ export default function Footer() {
 
         <Box bg='white' >
           <Container>
-            <Accordion allowToggle>
+            <Accordion id='disclosure' allowToggle>
               <AccordionItem borderTop='0' borderBottomColor={'#B8B8B8'} >
                 <AccordionButton onClick={onToggle} py={{base:"25px"}} px={{base: '30px', nopx:0}} _hover={{ bg: 'white'}}>
                   <Text as="span" flex='1' textAlign='left' {...texts.panelTitle}>

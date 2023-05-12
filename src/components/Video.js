@@ -17,7 +17,7 @@ export default function Video() {
       </Container>
 
       <Box maxW='1004px' mx='auto' bg='white' borderBottomLeftRadius='15px' borderBottomRightRadius='15px' p={{base: '27px 25px 49px 16px', lg: '30px 98px 41px'}} textAlign='center'>
-        <Text whiteSpace={{base: 'pre-line', lg: 'normal'}} fontSize={{base: '21px', lg: '28px'}} lineHeight={{base: '30px', lg: '41px'}}>
+        <Text whiteSpace={{base: 'pre-line', lg: 'normal'}} fontSize={{base: '16px', sm: '18px', lg: '28px'}} lineHeight={{base: '25px', sm: '30px', lg: '41px'}}>
           {`For more super smart tips you
           can consider starting with now,
           `}

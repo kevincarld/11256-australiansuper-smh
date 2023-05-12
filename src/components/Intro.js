@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 import Mover from './util/Mover'
 import { animation_zoom } from 'utils/motion'
 
-export default function Intro() {
+export default function Intro({scrollToDisc}) {
 
   return (
     <Box id='intro' pos='relative' pb={{base: '60px', d:'100px'}} mt={{ d: '-150px', wide: '-265px'}}>
@@ -55,7 +55,7 @@ export default function Intro() {
             <PreLine textStyle='body'>
               {`No matter what life stage you’re at, there’s no better time to start thinking about retirement planning than right now. “Engagement and education are the key to feeling empowered to making the most of your super,” Davis adds.
 
-              For easy-to-understand help and`} advice<sup>1</sup>{`, it’s worth checking out the tools and resources available on the AustralianSuper website, with plenty of articles, videos and webinars.`}
+              For easy-to-understand help and`} <Box as='span' onClick={scrollToDisc} _hover={{cursor: 'pointer'}}>advice<sup>1</sup></Box>{`, it’s worth checking out the tools and resources available on the AustralianSuper website, with plenty of articles, videos and webinars.`}
             </PreLine>
 
             <PreLine textStyle='body'>
